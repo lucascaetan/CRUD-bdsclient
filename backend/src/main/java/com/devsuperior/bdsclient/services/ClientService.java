@@ -52,7 +52,7 @@ public class ClientService {
 	@Transactional
 	public ClientDTO update(Long id, ClientDTO dto) {
 		try {
-			Client entity = new Client();
+			Client entity = repository.getOne(id);
 			entity.setName(dto.getName());
 			entity.setCpf(dto.getCpf());
 			entity.setIncome(dto.getIncome());
@@ -62,7 +62,7 @@ public class ClientService {
 			return new ClientDTO(entity);
 		}
 		catch (EntityNotFoundException e) {
-			throw new ResourceNotFoundException("Id not found " + id);
+				throw new ResourceNotFoundException("Id not found " + id);
 		}
 	}
 
