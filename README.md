@@ -1,5 +1,5 @@
 # Sobre o projeto
-projeto Spring Boot 2.4.4 contendo um CRUD completo de web services REST para acessar um recurso de clientes, contendo as cinco operações básicas:
+Projeto Spring Boot 2.4.4 contendo um CRUD completo de web services REST para acessar um recurso de clientes, contendo as cinco operações básicas:
 - Busca paginada de recursos
 - Busca de recurso por id
 - Inserir novo recurso
